@@ -2,3 +2,5 @@ name: myhpa
 labels:
   x: valuex
   z: valuez
+hotdrink: "tea"
+override_name: "mycustomhpa"
