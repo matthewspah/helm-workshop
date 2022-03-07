@@ -1,9 +1,9 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ .Value.wrongName }}
+  name: {{ .Values.name }}
   labels:
-    {{ .Values.labels }}
+    {{ .Values.labels | toJson }}
 spec:
   maxReplicas: 2
   minReplicas: 1
